@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('Una fantastica idea:'), //esempio di modifica.
+          Text('Una fantastica e bella idea:'), //esempio di modifica.
           Text(appState.current.asLowerCase),
 
         // Creare un bottone  
