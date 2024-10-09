@@ -27,6 +27,11 @@ class MyApp extends StatelessWidget {
 
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
+
+  void getNEXT(){
+    current = WordPair.random();
+    notifyListeners();
+  }
 }
 
 class MyHomePage extends StatelessWidget {
@@ -44,6 +49,7 @@ class MyHomePage extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             print('bottone premuto');
+            appState.getNEXT();
           },
           child: Text('Prossimo'),
           )
